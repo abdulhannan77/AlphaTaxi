@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_land">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bar_land"
+        android:id="@+id/top_bar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/alpha_land"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bar_land"
+        android:id="@+id/down"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/call_btn_land"
+        android:id="@+id/call_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/logout_btn_land"
+        android:id="@+id/logout_btn"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bck_btn_land"
+        android:id="@+id/back_btn"
+        android:layout_alignBottom="@+id/logout_btn"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    />
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textClock2"
+        tools:targetApi="jelly_bean_mr1"
+        tools:ignore="NewApi"
+        android:textColor="#6abd46"
+        android:focusable="true"
+        android:format12Hour="@null"
+        android:format24Hour="k:mm"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:paddingLeft="5dp"
+        android:layout_toRightOf="@+id/call_btn"
+        android:layout_alignTop="@+id/down"
+        android:layout_alignBottom="@+id/down"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="5dp"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/text_view"
+        tools:context=".SearchDestination"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/relativeLayout2">
+        <com.example.hanan.alphataxi.CustomAutoCompleteTextView
+            android:id="@+id/atv_places"
+            android:background="@mipmap/text_view"
+            android:layout_width="wrap_content"
+            android:imeOptions="actionDone"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:hint="Enter Destination" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/go_btn"
+        android:id="@+id/button6"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

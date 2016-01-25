@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_land">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bar"
+            android:id="@+id/top_bar"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/alpha"
+            android:id="@+id/top_text"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bck_btn"
+            android:id="@+id/back_btn"
+            android:layout_alignBottom="@+id/logout_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/logout_btn"
+            android:id="@+id/logout_btn"
+            android:layout_marginRight="10dp"
+            android:layout_alignBottom="@+id/top_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bar"
+            android:id="@+id/footer"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/call_btn"
+            android:id="@+id/call_btn"
+            android:layout_alignTop="@+id/footer"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textClock2"
+        tools:targetApi="jelly_bean_mr1"
+        tools:ignore="NewApi"
+        android:textColor="#6abd46"
+        android:focusable="true"
+        android:format24Hour=" MMM dd, yyyy k:mm"
+        android:format12Hour="@null"
+        android:textSize="30sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+        android:textStyle="bold"
+        android:textIsSelectable="false"
+        android:visibility="visible"
+        android:paddingTop="20dp"
+        android:paddingBottom="5dp"
+        android:layout_toEndOf="@+id/reject_btn"
+        android:layout_alignTop="@+id/footer"
+        android:layout_alignBottom="@+id/footer"
+        android:layout_toRightOf="@+id/reject_btn" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/pad_bar_land_book"
+        android:id="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/pad_land_book"
+        android:id="@+id/pad"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView7"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/accept_btn_land"
+        android:id="@+id/accept_btn"
+       android:layout_below="@+id/pad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/reject_btn_land"
+        android:id="@+id/reject_btn"
+        android:layout_below="@id/accept_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+</RelativeLayout>

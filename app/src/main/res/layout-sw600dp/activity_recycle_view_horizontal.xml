@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app2you.verticalviewpagerdemo.RecycleViewHorizontal" android:background="@mipmap/bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bar"
+        android:id="@+id/top_bar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/alpha"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bar"
+        android:id="@+id/down"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/call_btn"
+        android:id="@+id/call_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/logout_btn"
+        android:id="@+id/logout_btn"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bck_btn"
+        android:id="@+id/back_btn"
+        android:layout_alignBottom="@+id/logout_btn"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    />
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textClock2"
+        tools:targetApi="jelly_bean_mr1"
+        tools:ignore="NewApi"
+        android:textColor="#6abd46"
+        android:focusable="true"
+        android:format12Hour="@null"
+        android:format24Hour="k:mm"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:paddingLeft="5dp"
+        android:layout_alignTop="@+id/down"
+        android:layout_alignBottom="@+id/down"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="2dp"/>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+
+        android:scrollbars="horizontal"
+        android:background="@mipmap/bg_slider"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_green"
+        android:id="@+id/price"
+        android:text="00"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_above="@+id/my_recycler_view"
+        android:layout_centerHorizontal="true" /> 
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/tip_btn"
+        android:id="@+id/tip_btn"
+        android:layout_below="@+id/my_recycler_view"
+        android:layout_toRightOf="@+id/price"
+        android:layout_marginTop="44dp" />
+
+
+</RelativeLayout>

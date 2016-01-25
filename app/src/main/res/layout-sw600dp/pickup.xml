@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_land">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bar_land"
+        android:id="@+id/top_bar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/alpha_land"
+        android:id="@+id/top_text"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bck_btn_land"
+        android:id="@+id/back_btn"
+        android:layout_alignBottom="@+id/logout_btn"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/logout_btn_land"
+        android:id="@+id/logout_btn"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/top_text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bar_land"
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/call_btn_land"
+        android:id="@+id/call_btn"
+        android:layout_alignTop="@+id/footer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp"/>
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:targetApi="jelly_bean_mr1"
+        tools:ignore="NewApi"
+        android:textColor="#6abd46"
+        android:id="@+id/textClock4"
+
+        android:focusable="true"
+        android:format12Hour="@null"
+        android:format24Hour="k:mm"
+        android:textStyle="bold"
+        android:textSize="48sp"
+        android:paddingLeft="15dp"
+        android:layout_alignTop="@+id/down"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="40dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/pad_bar_pickup"
+        android:id="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/pad_pickup"
+        android:id="@+id/pad"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView7"
+        android:layout_marginLeft="100dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/map_btn_pick"
+        android:id="@+id/map1"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/pad_bar_pickup"
+        android:id="@+id/textView8"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/pad_pickup"
+        android:id="@+id/pad2"
+        android:layout_toRightOf="@+id/pad"
+        android:layout_below="@+id/textView8"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/map_btn_pick"
+        android:id="@+id/map2"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginLeft="20dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/callout_btn"
+        android:id="@+id/callout_btn"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp"
+       />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/noshow_btn"
+        android:id="@+id/noshow_btn"
+        android:layout_below="@id/callout_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="5dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/loaded_btn"
+        android:id="@+id/reject_btn"
+        android:layout_below="@id/noshow_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="5dp"
+        />
+
+</RelativeLayout>

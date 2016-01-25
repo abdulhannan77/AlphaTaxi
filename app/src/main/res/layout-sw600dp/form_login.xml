@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_land"
+    android:focusable="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bar_land"
+        android:id="@+id/top_bar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="right|top|center|left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/alpha_land"
+        android:id="@+id/top_text"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="Enter Email"
+
+        android:background="@mipmap/email_pass_bar_land"
+        android:layout_above="@+id/editText2"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Enter Password"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:layout_marginBottom="10dp"
+        android:background="@mipmap/email_pass_bar_land"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/button_login"
+        android:layout_alignStart="@+id/button_login" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@mipmap/logon_btn_land2"
+        android:id="@+id/button_login"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bck_btn_land"
+        android:id="@+id/back_btn"
+
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center"
+        android:layout_alignBottom="@+id/top_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bar_land"
+        android:id="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/call_btn_land"
+        android:id="@+id/button5"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignLeft="@+id/back_btn"
+        android:layout_alignStart="@+id/back_btn" />
+
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:targetApi="jelly_bean_mr1"
+        tools:ignore="NewApi"
+        android:id="@+id/textClock"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:elegantTextHeight="true"
+        android:layout_alignTop="@+id/textView3"
+        android:textColor="#6abd46"
+        android:focusable="true"
+        android:format12Hour="@null"
+        android:format24Hour="MMM dd, yyyy k:mm"
+        android:textStyle="bold"
+        android:textSize="48sp"
+        android:paddingLeft="45dp"
+        android:layout_toRightOf="@+id/top_text"
+        android:layout_toEndOf="@+id/top_text" />
+    <FrameLayout
+        android:id="@+id/progressBarHolder"
+        android:animateLayoutChanges="true"
+        android:visibility="gone"
+        android:alpha="0.4"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_below="@+id/editText2"
+            android:layout_gravity="center"/>?.
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Forget Password"
+        android:id="@+id/textView5"
+        android:onClick="onClick"
+        android:textColor="#ff2015"
+        android:layout_below="@+id/editText2"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

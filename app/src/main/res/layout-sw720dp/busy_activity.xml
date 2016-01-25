@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_land">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bar_land"
+        android:id="@+id/top_bar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/alpha_land"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bar_land"
+        android:id="@+id/down"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/call_btn_land"
+        android:id="@+id/call_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="100dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/logout_btn_land"
+        android:id="@+id/logout_btn"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bck_btn_land"
+        android:id="@+id/back_btn"
+        android:layout_alignBottom="@+id/logout_btn"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/smoking"
+        android:id="@+id/smoking"
+
+        android:layout_below="@+id/top_bar"
+        android:layout_marginLeft="390dp"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/snacks"
+        android:id="@+id/eat"
+        android:layout_alignBottom="@+id/smoking"
+        android:layout_toRightOf="@+id/smoking"
+        android:layout_marginLeft="100dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/airport"
+        android:id="@+id/airport"
+        android:layout_below="@+id/rest"
+        android:layout_marginLeft="390dp"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/other"
+        android:id="@+id/other1"
+        android:layout_alignBottom="@+id/airport"
+        android:layout_toRightOf="@+id/airport"
+        android:layout_marginLeft="100dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/rest_room"
+        android:id="@+id/rest"
+        android:layout_below="@+id/smoking"
+        android:layout_marginLeft="390dp"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/gas"
+        android:id="@+id/gas"
+        android:layout_alignTop="@+id/rest"
+        android:layout_toRightOf="@+id/smoking"
+        android:layout_toEndOf="@+id/smoking"
+        android:layout_marginLeft="100dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/other"
+        android:id="@+id/other2"
+        android:layout_above="@+id/down"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"/>
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:targetApi="jelly_bean_mr1"
+        tools:ignore="NewApi"
+        android:textColor="#6abd46"
+        android:id="@+id/textClock4"
+
+        android:focusable="true"
+        android:format12Hour="@null"
+        android:format24Hour="MMM dd, yyyy k:mm"
+        android:textStyle="bold"
+        android:textSize="48sp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_alignTop="@+id/down"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/other1" />
+
+</RelativeLayout>

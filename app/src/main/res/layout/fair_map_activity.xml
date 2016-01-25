@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity"
+    android:background="#252729"
+    android:id="@+id/re">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bar_land"
+        android:id="@+id/top_bar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_above="@+id/down"
+        >
+
+        <TextView
+            android:id="@+id/textViewAmount"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:background="@mipmap/small_bar"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:textSize="40dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/textViewMiles"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Miles"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:textSize="25dp"
+            android:layout_below="@+id/textViewAmount"/>
+        <TextView
+            android:id="@+id/textViewMilesValue"
+            android:layout_width="120dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textSize="25dp"
+            android:paddingLeft="5dp"
+            android:background="@mipmap/small_bar"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/textViewMiles"
+            android:layout_below="@+id/textViewAmount"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Time Travel"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:layout_below="@+id/textViewMiles"/>
+        <TextView
+            android:id="@+id/textViewTimeValue"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="00.00.00"
+            android:textSize="25dp"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@mipmap/small_bar"
+            android:layout_toRightOf="@+id/textViewTime"
+            android:layout_below="@+id/textViewMilesValue"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/textViewGratuity"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Gratuity"
+            android:visibility="gone"
+            android:textSize="25dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/textViewTime"/>
+        <Spinner
+            android:id="@+id/spinnerGratuityValue"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:spinnerMode="dialog"
+            android:background="@mipmap/big_bar"
+            android:prompt="@string/SELECTION"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/textViewGratuity"
+            android:layout_below="@+id/textViewTimeValue"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/textViewTotalFare"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Total Fare"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/spinnerGratuityValue"/>
+
+        <TextView
+            android:id="@+id/textViewTotalFareValue"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textSize="25dp"
+            android:background="@mipmap/small_bar"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/textViewTotalFare"
+            android:layout_below="@+id/spinnerGratuityValue"
+            android:textColor="#000000"/>
+    </RelativeLayout>
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="3dp"
+        android:layout_below="@+id/top_bar"
+
+        android:layout_toRightOf="@+id/relativeLayoutFirst">
+    </fragment>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/bar_land"
+        android:id="@+id/down"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@mipmap/call_btn_land"
+        android:id="@+id/call_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/logout_btn_land"
+        android:id="@+id/logout_btn"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bck_btn_land"
+        android:id="@+id/back_btn"
+        android:layout_alignBottom="@+id/logout_btn"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/alpha_land"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:targetApi="jelly_bean_mr1"
+        tools:ignore="NewApi"
+        android:textColor="#6abd46"
+        android:id="@+id/textClock4"
+
+        android:focusable="true"
+        android:format12Hour="@null"
+        android:format24Hour="MMM dd, yyyy k:mm"
+        android:textStyle="bold"
+        android:textSize="48sp"
+        android:paddingLeft="15dp"
+        android:layout_alignTop="@+id/down"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+       />
+    <FrameLayout
+        android:id="@+id/progressBarHolder"
+        android:animateLayoutChanges="true"
+        android:visibility="gone"
+        android:alpha="0.4"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar2"
+        android:layout_alignBottom="@+id/map"
+        android:layout_toLeftOf="@+id/buttonComplete"
+        android:layout_toStartOf="@+id/buttonComplete"
+        android:layout_marginBottom="56dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/map"
+        android:layout_toEndOf="@+id/relativeLayoutFirst"
+        android:layout_above="@+id/down"
+        android:weightSum="1"
+        android:layout_toRightOf="@+id/relativeLayoutFirst">
+
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/start_btn"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/map"
+            android:layout_above="@+id/down"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/linear"
+            android:layout_weight="0.3"/>
+
+
+    <Button
+        android:id="@+id/buttonPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/pause_btn"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/buttonStart"
+        android:layout_weight="0.3"/>
+
+
+        <Button
+            android:id="@+id/buttonComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/complete_btn"
+
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_toRightOf="@+id/buttonPause"
+            android:layout_weight="0.3"/>
+    </LinearLayout>
+</RelativeLayout>
